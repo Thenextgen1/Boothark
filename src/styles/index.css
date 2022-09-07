@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  font-style: normal;
+  padding: 0;
+}
+
+:root {
+  --arkGrey: #1D1B1B;
+  --arkBlack: #000;
+  --arkMarron: #A14807;
+  --arkLight: #C4C4C44D;
+  --arkWhite: #FBFBFB;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+fieldset {
+  border: none;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}

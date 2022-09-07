@@ -1,0 +1,83 @@
+.header {
+    background: var(--arkGrey);
+    padding: 2em 4em;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header p,
+.header h1 {
+    color: var(--arkWhite);
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-left: 0.4em;
+    letter-spacing: 0.03em;
+}
+
+.nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav>div div {
+    display: flex;
+    align-items: center;
+    margin-right: 5em;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    vertical-align: middle;
+    margin-right: 1.5em;
+}
+
+/* .nav ul li::after {
+    content: "";
+    transition: 0.5s;
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: blue;
+} */
+
+.header input[type="text"] {
+    background-color: var(--arkWhite);
+    border-radius: 10px;
+    font-size: 1.25em;
+    padding: 0.4em;
+    background-image: url(../assets/search.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.header input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    padding-left: 1em;
+}
+
+.bell {
+    background: var(--arkWhite);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.message,
+.grid,
+.person {
+    font-size: 2.3em;
+    color: #000;
+    fill: var(--arkWhite);
+}

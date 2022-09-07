@@ -1,0 +1,112 @@
+.home {
+    display: flex;
+    background: #E5E5E5;
+}
+
+.side_nav {
+    background: var(--arkBlack);
+    padding: 3em 4em;
+}
+
+.side_nav ul li a {
+    vertical-align: middle;
+    padding: 10px 1em;
+    border-radius: 7px;
+    color: #2C2C2C;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.02em;
+}
+
+.side_nav ul li:nth-of-type(2) a {
+    padding: 10px 2.3em;
+}
+
+.side_active {
+    background: var(--arkMarron);
+    color: #fff !important;
+}
+
+.side_nav ul {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 7px;
+    padding: 0.2em 0.3em;
+}
+
+.side_nav ul li {
+    margin: 0.5em 0;
+}
+
+.bid_nav {
+    margin-top: 2.5em;
+}
+
+.bid_nav>div {
+    margin-top: 1.5em;
+}
+
+.bid_nav h3 {
+    line-height: 2;
+}
+
+.bid_nav h3,
+.bid_nav p {
+    font-weight: 700;
+    font-size: 1.02em;
+    letter-spacing: 0.03em;
+    color: #fff;
+
+}
+
+.pencil {
+    margin-left: 0.6em;
+}
+
+.bid_nav p {
+    font-weight: 500;
+    margin-bottom: 0.2em;
+}
+
+.suitcase {
+    margin-right: 0.6em;
+    margin-bottom: 0.2em;
+}
+
+.bid_content {
+    margin-top: 0.4em;
+}
+
+.bid_icon {
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+.pencil_heading,
+.bid_sub,
+.bid_completion {
+    display: flex;
+    align-items: center;
+}
+
+.bid_completion {
+    margin-bottom: 0.4em;
+}
+
+.bid_completion p {
+    font-size: 0.75em;
+}
+
+.bid_sub>span:nth-of-type(2) {
+    margin-bottom: 6px;
+}
+
+
+.bid_completion span {
+    display: block;
+    width: 55px;
+    margin-right: 0.4em;
+    height: 4px;
+    background: var(--arkMarron);
+}
