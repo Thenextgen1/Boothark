@@ -9,6 +9,7 @@
   font-family: 'Poppins', sans-serif !important;
   font-style: normal;
   padding: 0;
+
 }
 
 :root {
@@ -17,6 +18,10 @@
   --arkMarron: #A14807;
   --arkLight: #C4C4C44D;
   --arkWhite: #FBFBFB;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 ul,
