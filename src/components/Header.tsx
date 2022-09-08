@@ -1,16 +1,22 @@
+import { useState } from 'react';
 import styles from '../styles/Header.module.css';
 import { IconContext } from "react-icons";
 import { HiBell } from 'react-icons/hi';
 import { MdMessage } from 'react-icons/md';
-import { RiGridFill } from 'react-icons/ri';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { RiArrowDropUpLine, RiGridFill } from 'react-icons/ri';
 import logo from '../assets/logo.svg';
 import account from '../assets/account.svg';
 import house from '../assets/house.svg';
 import person from '../assets/person.svg';
 import { Link } from 'react-router-dom';
+import Mobilemenu from './Mobilemenu';
 
 
 const Header = (): JSX.Element => {
+
+    const [nav, setNav] = useState(false);
+
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
@@ -22,15 +28,17 @@ const Header = (): JSX.Element => {
                             <h1>Ark</h1>
                         </div>
                     </Link>
-                    <div>
+                    <div className={styles.asset}>
+                        <div>
 
-                        <img src={house} alt="house" />
-                        <p>Asset</p>
-                    </div>
-                    <div>
+                            <img src={house} alt="house" />
+                            <p>Asset</p>
+                        </div>
+                        <div>
 
-                        <img src={account} alt="money" />
-                        <p>Account</p>
+                            <img src={account} alt="money" />
+                            <p>Account</p>
+                        </div>
                     </div>
                 </div>
                 <IconContext.Provider value={{ className: 'nav-icons' }}>
@@ -46,12 +54,21 @@ const Header = (): JSX.Element => {
                         </li>
                         <li>
                             <RiGridFill className={`${styles.grid}`} />
+                            <RiArrowDropUpLine style={{ color: 'white', fontSize: "1.5em", verticalAlign: "super" }} />
+
                         </li>
                         <li>
                             <img src={person} alt="notification" />
                         </li>
                     </ul>
                 </IconContext.Provider>
+
+                <div className={styles.menu} onClick={() => setNav(!nav)}>
+                    <GiHamburgerMenu style={{ fontSize: '2em', color: "#fff", cursor: 'pointer' }} />
+                </div>
+
+                {nav && <Mobilemenu nav={nav} setNav={setNav} />}
+
             </nav>
         </header>
     )
