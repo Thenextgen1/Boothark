@@ -1,8 +1,13 @@
-import React from 'react'
+import map from "../assets/maps.png";
+import styles from "../styles/patronise/Patronise.module.css";
 
 const Patronise = () => {
+
+
     return (
-        <div>Patronise</div>
+        <section>
+            <img src={map} alt="map" className={styles.map} />
+        </section>
     )
 }
 
