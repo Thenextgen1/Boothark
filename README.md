@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Project Link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<https://boothark-assessment.vercel.app/>
 
 ## Available Scripts
 
@@ -14,33 +14,35 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+## Dependencies used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-React Router
+-TypeScript
+-React icons
+-React Maps(to be implemented with google maps api key)
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Pages: Contains Four pages: Home, Patronise, Bid and Places
+  -Home page: Contains the main page with the patronise and bid header
+  -Patronise page: Contains the list of places to patronise ie restaurants and a corresponding map
+  -Bid page: Contains jobs to bid for roles
+  -Places page: Based on the patronise page, but with a card rendered with more details
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-Components: Contains the components used in the pages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Styles: Contains the styles for the pages and components
 
-### `npm run eject`
+-Assets: Contains the images used in the project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-Store: Contains the data Structure for the project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Workflow
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-Clicking the the list of places in the patronise will page render the places page containing the corresponding place and the card with the details of the place
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Future Improvements
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-From the figma design file, a map is to be implemented with the google maps api key. The map will be implemented in the patronise page and the places page
+Google requires having a console account with your card details attached to activate this particular api key.
+-A mobile view for each section in the figma design file should be created as well. This well imporove workflow and user experience.
