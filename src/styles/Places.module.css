@@ -291,7 +291,7 @@
 
     .patronise_search>div:nth-of-type(1) input[type="text"] {
 
-        width: auto;
+        width: auto !important;
     }
 
 

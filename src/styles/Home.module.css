@@ -123,7 +123,7 @@
     background: var(--arkMarron);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .home {
         flex-direction: column;
     }
