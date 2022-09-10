@@ -18,8 +18,8 @@ type Props = {
 
 const Mobilemenu: React.FC<Props> = ({ nav, setNav }) => {
     return (
-        <div className={styles.mobilemenu} onClick={() => setNav(!nav)}>
-            <div className={styles.close_container}>
+        <div className={styles.mobilemenu} >
+            <div className={styles.close_container} onClick={() => setNav(!nav)}>
                 <AiFillCloseCircle style={{ color: '#fff', fontSize: '2em' }} />
             </div>
             <div>
