@@ -9,7 +9,6 @@
   font-family: 'Poppins', sans-serif !important;
   font-style: normal;
   padding: 0;
-  flex-shrink: 0;
 }
 
 :root {
@@ -20,9 +19,7 @@
   --arkWhite: #FBFBFB;
 }
 
-body {
-  overflow-x: hidden;
-}
+body {}
 
 ul,
 li {
