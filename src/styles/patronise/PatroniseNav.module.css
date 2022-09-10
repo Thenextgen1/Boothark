@@ -18,14 +18,14 @@
     align-items: center;
 }
 
-.patronise_search>div:nth-of-type(1) input[type="text"] {
+.patronise_search>div:nth-of-type(1) input {
     letter-spacing: 0.03em;
     font-size: 1em;
     margin-left: 1em;
     color: #000000;
 }
 
-.patronise_search input[type="text"]::placeholder {
+.patronise_search input::placeholder {
     color: #000000;
 }
 
@@ -88,7 +88,7 @@
 }
 
 @media(max-width: 376px) {
-    .patronise_search>div:nth-of-type(1) input[type="text"] {
+    .patronise_search>div:nth-of-type(1) input {
         width: 100px;
     }
 

@@ -70,7 +70,7 @@
     margin-left: 28px;
 }
 
-.header input[type="text"] {
+.header input {
     background-color: var(--arkWhite);
     border-radius: 10px;
     font-size: 1.25em;
@@ -81,7 +81,7 @@
     width: 200px;
 }
 
-.header input[type="text"]::placeholder {
+.header input::placeholder {
     color: rgba(0, 0, 0, 0.2);
     font-weight: 500;
     padding-left: 1em;

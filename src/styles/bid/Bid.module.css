@@ -22,13 +22,13 @@
     border-radius: 7px;
 }
 
-.main_bid input[type="text"] {
+.main_bid input {
     font-size: 1.25em;
     padding: 0.5em 0;
 
 }
 
-.main_bid input[type="text"]::placeholder {
+.main_bid input::placeholder {
     color: #686868;
 }
 
@@ -75,7 +75,7 @@
 }
 
 @media(max-width: 376px) {
-    .main_bid input[type="text"] {
+    .main_bid input {
         font-size: 0.975em;
         width: 160px;
     }
