@@ -106,6 +106,10 @@
     margin-bottom: 0.4em;
 }
 
+.pencil_heading * {
+    flex-shrink: 0;
+}
+
 .bid_completion p {
     font-size: 0.75em;
 }

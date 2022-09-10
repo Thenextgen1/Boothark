@@ -88,9 +88,9 @@
         margin-left: 0;
     }
 
-    .patronise_card>div p:nth-of-type(2),
+    /* .patronise_card>div p:nth-of-type(2),
     .patronise_card h3 {
         width: auto;
-    }
+    } */
 
 }

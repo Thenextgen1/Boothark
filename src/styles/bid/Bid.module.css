@@ -73,3 +73,10 @@
         padding: 3em 1em;
     }
 }
+
+@media(max-width: 376px) {
+    .main_bid input[type="text"] {
+        font-size: 0.975em;
+        width: 160px;
+    }
+}

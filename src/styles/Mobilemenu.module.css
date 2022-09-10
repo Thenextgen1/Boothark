@@ -58,10 +58,6 @@
     display: none;
 }
 
-.mobilemenu>ul:nth-of-type(1) input[type="text"] {
-    width: auto;
-}
-
 .mobilemenu>ul:nth-of-type(1) li {
     margin-right: 0;
 }
