@@ -11,7 +11,7 @@ const PatroniseNav = () => {
     return (
         <>
             <div className={styles.patronise_nav_main}>
-                <div className={styles.patronise_search}>
+                <form className={styles.patronise_search}>
                     <div>
                         <img src={hamburger} alt="menu" width="25" height="25" />
                         <input type="text" placeholder="Takeout" />
@@ -22,7 +22,7 @@ const PatroniseNav = () => {
                         <img src={line} alt="line" />
                         <button><CgClose /></button>
                     </div>
-                </div>
+                </form>
                 <ul>
                     <li>Rating <RiArrowDropDownFill style={{ verticalAlign: 'middle', fontSize: '1.4em' }} /></li>
                     <li>Hours <RiArrowDropDownFill style={{ verticalAlign: 'middle', fontSize: '1.4em' }} /></li>
