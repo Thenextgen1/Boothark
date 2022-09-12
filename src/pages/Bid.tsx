@@ -9,14 +9,15 @@ const Bid = () => {
         <>
 
             <section className={styles.main_bid}>
-                <div>
+                <div className={styles.container}>
                     <IconContext.Provider value={{ className: 'bid_icons' }}>
                         <div className={styles.bid_request}>
-                            <div>
-                                <input type="text" name="search" placeholder="Search Request" />
-                                <button><FaSearch className={`${styles.search}`} /></button>
+                            <div className={styles.bid_search_container}>
+                                <div>
+                                    <input type="text" name="search" placeholder="Search Request" />
+                                    <button><FaSearch className={`${styles.search}`} /></button>
+                                </div>
                             </div>
-
                             <p>Advanced Search</p>
                         </div>
                         <div className={styles.sort}>
@@ -25,12 +26,12 @@ const Bid = () => {
                             <p><button>Most Recent</button></p>
                         </div>
                     </IconContext.Provider>
-                </div>
 
-                <div>
-                    <Card />
-                </div>
 
+                    <div>
+                        <Card />
+                    </div>
+                </div>
 
             </section>
 

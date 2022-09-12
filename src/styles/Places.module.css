@@ -82,7 +82,8 @@
     font-size: 1em;
     margin-left: 1em;
     color: #000000;
-    width: 300px;
+    width: 40vw;
+    max-width: 300px;
 }
 
 .patronise_search input::placeholder {
@@ -289,25 +290,11 @@
         display: none;
     }
 
-    .patronise_search>div:nth-of-type(1) input {
-
-        width: auto !important;
-    }
-
-
-
 }
 
 @media(max-width: 407px) {
     .patronise_submit_icons {
         padding: 0;
     }
-
-
-    .patronise_search>div:nth-of-type(1) input {
-
-        width: 113px !important;
-    }
-
 
 }

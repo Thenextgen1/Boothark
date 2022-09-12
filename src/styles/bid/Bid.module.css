@@ -4,28 +4,38 @@
 
 .search {
     color: white;
-    font-size: 1.3em;
+    font-size: 100%;
 }
 
-.bid_request>div button {
+.bid_search_container>div button {
     background: var(--arkMarron);
     border-radius: 0px 7px 7px 0px;
-    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    max-width: 50px;
 }
 
-.bid_request>div {
+.bid_search_container>div {
     display: flex;
-    justify-content: space-between;
+    width: fit-content;
     background: #fff;
-    padding-left: 2.2em;
     box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.06);
     border-radius: 7px;
+    justify-content: center;
+}
+
+.bid_search_container {
+    display: flex;
+    justify-content: center;
 }
 
 .main_bid input {
     font-size: 1.25em;
-    padding: 0.5em 0;
-
+    padding: 0.5em;
+    width: 75vw;
+    max-width: 400px;
 }
 
 .main_bid input::placeholder {
@@ -77,6 +87,5 @@
 @media(max-width: 376px) {
     .main_bid input {
         font-size: 0.975em;
-        width: 160px;
     }
 }
