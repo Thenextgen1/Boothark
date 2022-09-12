@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import styles from '../styles/Header.module.css';
+import Mobilemenu from './Mobilemenu'
 import { IconContext } from "react-icons";
-import { HiBell } from 'react-icons/hi';
-import { MdMessage } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RiArrowDropUpLine, RiGridFill } from 'react-icons/ri';
 import logo from '../assets/logo.svg';
 import account from '../assets/account.svg';
 import house from '../assets/house.svg';
 import person from '../assets/person.svg';
-import { Link } from 'react-router-dom';
-import Mobilemenu from './Mobilemenu';
+import message from "../assets/message.svg"
+import notification from "../assets/notification.svg"
+    ;
 
 
 const Header = (): JSX.Element => {
@@ -47,10 +48,10 @@ const Header = (): JSX.Element => {
                             <input className={styles.search} placeholder='Search' type="text" />
                         </li>
                         <li>
-                            <HiBell className={`${styles.bell}`} />
+                            <img src={notification} alt="notification" />
                         </li>
                         <li>
-                            <MdMessage className={`${styles.message}`} />
+                            <img src={message} alt="message" />
                         </li>
                         <li>
                             <RiGridFill className={`${styles.grid}`} />

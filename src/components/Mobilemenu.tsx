@@ -1,11 +1,11 @@
 import { IconContext } from 'react-icons';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import { HiBell } from 'react-icons/hi';
-import { MdMessage } from 'react-icons/md';
 import { RiArrowDropUpLine, RiGridFill } from 'react-icons/ri';
 import account from '../assets/account.svg';
 import house from '../assets/house.svg';
 import person from '../assets/person.svg';
+import message from "../assets/message.svg"
+import notification from "../assets/notification.svg"
 import styles from "../styles/Mobilemenu.module.css";
 
 
@@ -43,10 +43,10 @@ const Mobilemenu: React.FC<Props> = ({ nav, setNav }) => {
                 </ul>
                 <ul>
                     <li>
-                        <HiBell className={`${styles.bell}`} />
+                        <img src={notification} alt="notification" />
                     </li>
                     <li>
-                        <MdMessage className={`${styles.message}`} />
+                        <img src={message} alt="message" />
                     </li>
                     <li>
                         <RiGridFill className={`${styles.grid}`} />
