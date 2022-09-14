@@ -10,8 +10,7 @@ import account from '../assets/account.svg';
 import house from '../assets/house.svg';
 import person from '../assets/person.svg';
 import message from "../assets/message.svg"
-import notification from "../assets/notification.svg"
-    ;
+import notification from "../assets/notification.svg";
 
 
 const Header = (): JSX.Element => {
